@@ -1,0 +1,108 @@
+/* Normalize is imported before this file */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-stack;
+  color: $primary-color;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+
+  background-color: rgb(238,238,238);
+
+  .logo img {
+    max-height: 100px;
+    height: auto;
+  }
+
+  nav {
+    position: relative;
+
+    .hamburger {
+      background: none;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+      color: $primary-color;
+    }
+
+    .nav-links {
+      display: none;
+      position: absolute;
+      right: 1rem;
+      top: 60px;
+      background: #fff;
+      border: 1px solid #ccc;
+      list-style: none;
+      padding: 1rem;
+
+      li {
+        margin: 0.5rem 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: $primary-color;
+
+        &.active {
+          color: $secondary-color;
+          font-weight: bold;
+        }
+      }
+
+      &.open {
+        display: block;
+      }
+    }
+  }
+}
+
+main {
+  .row {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    &.bg-highlight {
+      background-color: $bg-highlight;
+    }
+
+    .column {
+      margin-bottom: 1rem;
+
+      h2, h3 {
+        margin-top: 0;
+      }
+
+      img {
+        max-width: 30%;
+        height: auto;
+        display: block;
+        margin: 0.5rem 0;
+
+        .float-right {
+            float: right;
+            margin: 0 0 1rem 1rem;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  background-color: #eee;
+  padding: 1rem;
+
+  p {
+    margin: 0;
+  }
+}

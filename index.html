@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Skyline Wireless</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Google Font appropriate to target audience -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  
+  <!-- Link to the compiled CSS (after SCSS is processed) -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <!-- 1x, 2x, 3x versions of the logo -->
+      <a href="index.html">
+        <img
+          srcset="
+            images/skyline-wireless-logo@1x.png 1x,
+            images/skyline-wireless-logo@2x.png 2x,
+            images/skyline-wireless-logo@3x.png 3x
+          "
+          src="images/skyline-wireless-logo@1x.png"
+          alt="Skyline Wireless Logo"
+        />
+      </a>
+    </div>
+    <nav>
+      <!-- Hamburger for small screens -->
+      <button class="hamburger" aria-label="Open Navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="#" class="active">Sign Up</a></li>
+        <li><a href="#">Plans</a></li>
+        <li><a href="#">Deals</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Row 1: Two columns -->
+    <div class="row">
+      <div class="column">
+        <h2>No-Contract Plans</h2>
+        <p>
+          Enjoy the freedom of month-to-month billing with no cancellation fees. 
+          Skyline Wireless offers flexible data, talk, and text options designed 
+          to fit your lifestyle.
+        </p>
+      </div>
+      <div class="column">
+        <h2>Flexible Payment Options</h2>
+        <p>
+          Pay upfront or spread the cost of a new device over time. We believe 
+          everyone should have access to the latest technology without breaking 
+          the bank.
+        </p>
+      </div>
+    </div>
+
+    <!-- Row 2: Single column with background highlight -->
+    <div class="row bg-highlight">
+      <div class="column">
+        <h3>Featured Device: CloudPhone Ultra</h3>
+        <img src="images/cloudphone-ultra.png" alt="CloudPhone Ultra" class="float-right"/>
+        <p>
+          Save up to $300 when you trade in an eligible phone and sign up for 
+          unlimited data. The CloudPhone Ultra features an edge-to-edge display, 
+          lightning-fast processor, and an impressive camera system for capturing 
+          life’s moments.
+        </p>
+      </div>
+    </div>
+
+    <!-- Row 3: Four columns -->
+    <div class="row">
+      <div class="column">
+        <h3>Tablet</h3>
+        <img src="images/tablet.png" alt="Tablet" />
+        <p>
+          Stay productive on the go with a lightweight tablet. Ideal for 
+          streaming, note-taking, and more.
+        </p>
+      </div>
+      <div class="column">
+        <h3>Smartphone</h3>
+        <img src="images/smartphone.png" alt="Smartphone" />
+        <p>
+          Our smartphones offer seamless connectivity, crystal-clear calls, 
+          and blazing-fast internet.
+        </p>
+      </div>
+      <div class="column">
+        <h3>Smartwatch</h3>
+        <img src="images/smartwatch.png" alt="Smartwatch" />
+        <p>
+          Track your fitness goals and receive notifications at a glance with 
+          our range of wearables.
+        </p>
+      </div>
+      <div class="column">
+        <h3>Laptop</h3>
+        <img src="images/laptop.png" alt="Laptop" />
+        <p>
+          Combine portability and power for work or play, all on one sleek device.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="year"></span> &bull; Austin Taylor
+    </p>
+  </footer>
+
+  <script>
+    // Set the current year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Toggle navigation on small screens
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

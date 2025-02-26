@@ -1,0 +1,35 @@
+@media (min-width: $breakpoint-medium) {
+    header {
+      padding: 1rem 2rem;
+  
+      nav {
+        .hamburger {
+          display: none; /* Hide hamburger on medium+ screens */
+        }
+  
+        .nav-links {
+          display: flex;    /* Horizontal menu */
+          position: static; /* No absolute positioning */
+          border: none;
+          background: none;
+          padding: 0;
+  
+          li {
+            margin: 0 1rem;
+          }
+        }
+      }
+    }
+  
+    main {
+      .row {
+        flex-direction: row;
+  
+        .column {
+          flex: 1;
+          margin: 0 1rem;
+        }
+      }
+    }
+  }
+  

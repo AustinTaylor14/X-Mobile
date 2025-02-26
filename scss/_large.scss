@@ -1,0 +1,20 @@
+@media (min-width: $breakpoint-large) {
+    header {
+      padding: 1.5rem 3rem;
+  
+      .logo img {
+        max-height: 100px;
+      }
+    }
+  
+    main {
+      .row {
+        padding: 2rem;
+  
+        .column {
+          margin: 0 1rem;
+        }
+      }
+    }
+  }
+  
