@@ -4,14 +4,17 @@
   <meta charset="UTF-8" />
   <title>Skyline Wireless</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="css/normalize.css" />
+
   <!-- Google Font appropriate to target audience -->
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
     rel="stylesheet"
   />
-  
-  <!-- Link to the compiled CSS (after SCSS is processed) -->
+
+  <!-- Compiled main CSS (after SCSS) -->
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -45,7 +48,7 @@
   <main>
     <!-- Row 1: Two columns -->
     <div class="row">
-      <div class="column">
+      <div class="column small-12 medium-6 large-6">
         <h2>No-Contract Plans</h2>
         <p>
           Enjoy the freedom of month-to-month billing with no cancellation fees. 
@@ -53,7 +56,7 @@
           to fit your lifestyle.
         </p>
       </div>
-      <div class="column">
+      <div class="column small-12 medium-6 large-6">
         <h2>Flexible Payment Options</h2>
         <p>
           Pay upfront or spread the cost of a new device over time. We believe 
@@ -65,21 +68,22 @@
 
     <!-- Row 2: Single column with background highlight -->
     <div class="row bg-highlight">
-      <div class="column">
+      <div class="column small-12 bg">
+
         <h3>Featured Device: CloudPhone Ultra</h3>
-        <img src="images/cloudphone-ultra.png" alt="CloudPhone Ultra" class="float-right"/>
+        <img class="cloudphone-ultra" src="images/cloudphone-ultra.png" alt="CloudPhone Ultra" class="float-right"/>
         <p>
           Save up to $300 when you trade in an eligible phone and sign up for 
           unlimited data. The CloudPhone Ultra features an edge-to-edge display, 
           lightning-fast processor, and an impressive camera system for capturing 
-          life’s moments.
+          lifes moments.
         </p>
       </div>
     </div>
 
     <!-- Row 3: Four columns -->
     <div class="row">
-      <div class="column">
+      <div class="column small-12 medium-9 large-3">
         <h3>Tablet</h3>
         <img src="images/tablet.png" alt="Tablet" />
         <p>
@@ -87,7 +91,7 @@
           streaming, note-taking, and more.
         </p>
       </div>
-      <div class="column">
+      <div class="column small-12 medium-6 large-3">
         <h3>Smartphone</h3>
         <img src="images/smartphone.png" alt="Smartphone" />
         <p>
@@ -95,7 +99,7 @@
           and blazing-fast internet.
         </p>
       </div>
-      <div class="column">
+      <div class="column small-12 medium-6 large-3">
         <h3>Smartwatch</h3>
         <img src="images/smartwatch.png" alt="Smartwatch" />
         <p>
@@ -103,7 +107,7 @@
           our range of wearables.
         </p>
       </div>
-      <div class="column">
+      <div class="column small-12 medium-6 large-3">
         <h3>Laptop</h3>
         <img src="images/laptop.png" alt="Laptop" />
         <p>
@@ -133,3 +137,4 @@
   </script>
 </body>
 </html>
+

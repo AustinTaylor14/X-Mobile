@@ -20,16 +20,15 @@
         }
       }
     }
-  
+    
     main {
-      .row {
-        flex-direction: row;
-  
-        .column {
-          flex: 1;
-          margin: 0 1rem;
-        }
+
+
+      @for $i from 1 through 12 {
+        $w: calc($i /12) * 100%;
+          .medium-#{$i} {flex-basis: $w;}
       }
+
     }
   }
   

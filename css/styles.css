@@ -358,27 +358,72 @@ header nav .nav-links.open {
 
 main .row {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+main .column {
+  box-sizing: border-box;
   padding: 1rem;
 }
-main .row.bg-highlight {
-  background-color: #f9f9e8;
-}
-main .row .column {
-  margin-bottom: 1rem;
-}
-main .row .column h2, main .row .column h3 {
+main h2,
+main h3 {
   margin-top: 0;
 }
-main .row .column img {
-  max-width: 30%;
+main img {
+  max-width: 80%;
   height: auto;
   display: block;
   margin: 0.5rem 0;
 }
-main .row .column img .float-right {
+main img .float-right {
   float: right;
   margin: 0 0 1rem 1rem;
+}
+main .bg {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+main .cloudphone-ultra {
+  display: block;
+  max-width: 50%;
+}
+main .small-1 {
+  flex-basis: 8.3333333333%;
+}
+main .small-2 {
+  flex-basis: 16.6666666667%;
+}
+main .small-3 {
+  flex-basis: 25%;
+}
+main .small-4 {
+  flex-basis: 33.3333333333%;
+}
+main .small-5 {
+  flex-basis: 41.6666666667%;
+}
+main .small-6 {
+  flex-basis: 50%;
+}
+main .small-7 {
+  flex-basis: 58.3333333333%;
+}
+main .small-8 {
+  flex-basis: 66.6666666667%;
+}
+main .small-9 {
+  flex-basis: 75%;
+}
+main .small-10 {
+  flex-basis: 83.3333333333%;
+}
+main .small-11 {
+  flex-basis: 91.6666666667%;
+}
+main .small-12 {
+  flex-basis: 100%;
 }
 
 footer {
@@ -407,12 +452,41 @@ footer p {
   header nav .nav-links li {
     margin: 0 1rem;
   }
-  main .row {
-    flex-direction: row;
+  main .medium-1 {
+    flex-basis: 8.3333333333%;
   }
-  main .row .column {
-    flex: 1;
-    margin: 0 1rem;
+  main .medium-2 {
+    flex-basis: 16.6666666667%;
+  }
+  main .medium-3 {
+    flex-basis: 25%;
+  }
+  main .medium-4 {
+    flex-basis: 33.3333333333%;
+  }
+  main .medium-5 {
+    flex-basis: 41.6666666667%;
+  }
+  main .medium-6 {
+    flex-basis: 50%;
+  }
+  main .medium-7 {
+    flex-basis: 58.3333333333%;
+  }
+  main .medium-8 {
+    flex-basis: 66.6666666667%;
+  }
+  main .medium-9 {
+    flex-basis: 75%;
+  }
+  main .medium-10 {
+    flex-basis: 83.3333333333%;
+  }
+  main .medium-11 {
+    flex-basis: 91.6666666667%;
+  }
+  main .medium-12 {
+    flex-basis: 100%;
   }
 }
 @media only screen and (min-width: 64rem) and (min-width: 1024px) {
@@ -422,10 +496,45 @@ footer p {
   header .logo img {
     max-height: 100px;
   }
-  main .row {
-    padding: 2rem;
+  main .large-1 {
+    flex-basis: 8.3333333333%;
   }
-  main .row .column {
-    margin: 0 1rem;
+  main .large-2 {
+    flex-basis: 16.6666666667%;
   }
+  main .large-3 {
+    flex-basis: 25%;
+  }
+  main .large-4 {
+    flex-basis: 33.3333333333%;
+  }
+  main .large-5 {
+    flex-basis: 41.6666666667%;
+  }
+  main .large-6 {
+    flex-basis: 50%;
+  }
+  main .large-7 {
+    flex-basis: 58.3333333333%;
+  }
+  main .large-8 {
+    flex-basis: 66.6666666667%;
+  }
+  main .large-9 {
+    flex-basis: 75%;
+  }
+  main .large-10 {
+    flex-basis: 83.3333333333%;
+  }
+  main .large-11 {
+    flex-basis: 91.6666666667%;
+  }
+  main .large-12 {
+    flex-basis: 100%;
+  }
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
 }

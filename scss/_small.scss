@@ -16,7 +16,7 @@ header {
   align-items: center;
   padding: 1rem;
 
-  background-color: rgb(238,238,238);
+  background-color: rgb(238, 238, 238);
 
   .logo img {
     max-height: 100px;
@@ -68,34 +68,52 @@ header {
 main {
   .row {
     display: flex;
-    flex-direction: column;
-    padding: 1rem;
+    flex-wrap: wrap; 
+    margin: 0 auto;
+    max-width: 1600px; 
+  }
 
-    &.bg-highlight {
-      background-color: $bg-highlight;
-    }
+  .column {
+    box-sizing: border-box;
+    padding: 1rem; 
+  }
 
-    .column {
-      margin-bottom: 1rem;
 
-      h2, h3 {
-        margin-top: 0;
-      }
+  h2,
+  h3 {
+    margin-top: 0;
+  }
 
-      img {
-        max-width: 30%;
-        height: auto;
-        display: block;
-        margin: 0.5rem 0;
+  img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0.5rem 0;
 
-        .float-right {
-            float: right;
-            margin: 0 0 1rem 1rem;
-        }
-      }
+    .float-right {
+      float: right;
+      margin: 0 0 1rem 1rem;
     }
   }
+ .bg {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+
+  .cloudphone-ultra {
+    display: block;
+    max-width: 50%;
+
+
+  }
+  @for $i from 1 through 12 {
+    $w: calc($i /12) * 100%;
+      .small-#{$i} {flex-basis: $w;}
+  }
 }
+
+
 
 footer {
   text-align: center;
